@@ -1,0 +1,16 @@
+<Alloy>
+	<TabGroup onOpen="doOpen">
+		<Tab id="tMap" index="0">
+			<Require id="map" src="tabs/map"/>
+		</Tab>
+		<Tab id="tSearch" index="1">
+			<Require  id="products" src="tabs/products"/>
+		</Tab>
+		<Tab id="tMarket" index="2">
+			<Require  id="market" src="tabs/market" />
+		</Tab>
+		<Tab id="tReg" index="3">
+			<Require  id="reg" src="tabs/reg" />
+		</Tab>
+	</TabGroup>
+</Alloy>

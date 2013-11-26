@@ -1,0 +1,11 @@
+"#preferences":{
+	title:Alloy.Globals.lang.buttons.editPreferences
+}
+
+"#mymarket":{
+	title:Alloy.Globals.lang.buttons.editMyMarket
+}
+
+"#myfarm":{
+	enableZoomControls:false
+}
