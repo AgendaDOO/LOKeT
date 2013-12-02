@@ -10,7 +10,7 @@ LOKeT or Local e Marketplace is a mobile service, which provides direct access t
 
 ####System Requirements for LOKeT TYPO3 Extension
 
-TYPO3 version: **6.1**<br />
+>TYPO3 version: **6.1**<br />
 Operating System: **Unix (e.g. Linux), Windows or Mac**<br />
 Webserver: **Apache (recommended), IIS, theoretically any PHP enabled Webserver**<br />
 Database: **MySQL or any other database system supported by the TYPO3 DBAL (e.g. Oracle, Postgres etc.)**<br />
@@ -19,7 +19,7 @@ Hardware: **at least 256 MB of RAM. As with all database-driven applications, mo
 
 ####System Requirements for LOKeT Titanium project
 
-Appcelerator Titanium version: **3.x**<br />
+>Appcelerator Titanium version: **3.x**<br />
 Operating System: **a recent version of Windows, Mac OS X or Ubuntu**<br />
 Memory: **2 GB RAM (available memory, rather than total memory)**<br />
 Java Runtime: **Oracle JDK (no other brand of Java is suitable)**<br />
