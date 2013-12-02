@@ -1,5 +1,0 @@
-<Alloy>
-    <Window id="win" modal="true">
-        <WebView id="kmetijeList" />
-    </Window>
-</Alloy>

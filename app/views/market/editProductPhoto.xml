@@ -1,6 +1,0 @@
-<Alloy>
-	<View layout="vertical" class="preferencesView" id="marketEditProductPhoto" >
-		<Button id="imageButton" onClick="uploadProductImage">Zamenjaj sliko</Button>
-		<ProgressBar id="progressbar" />
-	</View>
-</Alloy>

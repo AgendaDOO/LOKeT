@@ -1,9 +1,0 @@
-<Alloy>
-	<Window layout="vertical">
-		<!-- <View height="50sp" layout="horizontal" backgroundColor="#BDECB6">
-			<TextField width="33%" height="40sp" id="name" />
-			<TextField width="33%" height="40sp" id="location" />
-		</View> -->
-		<WebView id="productsView" />
-	</Window>
-</Alloy>

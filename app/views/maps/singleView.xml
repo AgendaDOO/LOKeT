@@ -1,8 +1,0 @@
-<Alloy>
-	<Window layout="vertical">
-		<View height="50sp" layout="horizontal" backgroundColor="#BDECB6">
-			<Button id="openMaps" width="100%" onClick="openMaps" />
-		</View>
-		<WebView id="kmetija" />
-	</Window>
-</Alloy>

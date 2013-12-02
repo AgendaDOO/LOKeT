@@ -1,9 +1,0 @@
-<Alloy>
-	<ScrollView id="sLogin">
-		<View class="modalContainer">
-			<ImageView id="iLogoImage"/>
-			<TextField id="tUsername" onReturn="focusPassword" />
-			<TextField id="tPassword" onReturn="login"/>
-		</View>
-	</ScrollView>
-</Alloy>

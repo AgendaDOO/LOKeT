@@ -1,5 +1,0 @@
-<Alloy>
-	<Window id="about" layout="vertical">
-		<WebView id="aboutApp" />
-	</Window>
-</Alloy>

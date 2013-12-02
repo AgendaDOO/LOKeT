@@ -1,6 +1,0 @@
-<Alloy>
-	<View layout="vertical" class="preferencesView" id="settingsEditPhoto" >
-		<Button id="imageButton" onClick="uploadImage">Zamenjaj sliko</Button>
-		<ProgressBar id="progressbar" />
-	</View>
-</Alloy>

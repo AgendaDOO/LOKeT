@@ -1,8 +1,0 @@
-"#market":{
-	title: Alloy.Globals.lang.market.title,
-	backgroundColor:"#E9E9E9",
-}
-
-"#add_row":{
-	title: Alloy.Globals.lang.market.add
-}

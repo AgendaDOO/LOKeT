@@ -1,4 +1,0 @@
-<Alloy>
-	<Window id="market" onOpen="doOpen"/>
-</Alloy>
-
