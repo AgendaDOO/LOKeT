@@ -10,7 +10,7 @@ LOKeT or Local e Marketplace is a mobile service, which provides direct access t
 
 ###System Requirements for LOKeT TYPO3 Extension
 
-TYPO3 version: 6.1<br />
+TYPO3 version: **6.1**<br />
 Operating System: Unix (e.g. Linux), Windows or Mac<br />
 Webserver: Apache (recommended), IIS, theoretically any PHP enabled Webserver<br />
 Database: MySQL or any other database system supported by the TYPO3 DBAL (e.g. Oracle, Postgres etc.)<br />
