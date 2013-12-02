@@ -1,0 +1,55 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<v:asset.script name="moretext">
+    $(function() {
+    var showChar = 120, showtxt = "prikaži", hidetxt = "skrij";
+    $('.more').each(function() {
+    var content = $(this).text();
+    if (content.length > showChar) {
+    var con = content.substr(0, showChar);
+    var hcon = content.substr(showChar, content.length - showChar);
+    var txt= con +  '<span class="dots">...</span><span class="morecontent"><span>' + hcon + '</span>&nbsp;&nbsp;<a href="" class="moretxt">' + showtxt + '</a></span>';
+    $(this).html(txt);
+    }
+    });
+    $(".moretxt").click(function() {
+    if ($(this).hasClass("sample")) {
+    $(this).removeClass("sample");
+    $(this).text(showtxt);
+    } else {
+    $(this).addClass("sample");
+    $(this).text(hidetxt);
+    }
+    $(this).parent().prev().toggle();
+    $(this).prev().toggle();
+    return false;
+    });
+    });
+</v:asset.script>
+
+
+<h4><f:translate key="tx_agloket_domain_model_kmetija.opis" /></h4>
+<hr/>
+
+
+<div class="more">
+    <p><f:format.html parseFuncTSPath='lib.parseFunc'>{kmetija.opis}</f:format.html></p>
+</div>
+
+
+<hr/>
+<h4>Podatki o kmetiji</h4>
+<hr/>
+
+<p>
+    Velikost kmetije: {kmetija.velikostKmetije.naziv}
+</p>
+
+<p>
+    Tip kmetije: {kmetija.tipKmetije.naziv}
+</p>
+<p>
+    Tip pridelave: {kmetija.tipPridelave.naziv}
+</p>
+<p>
+    Tip kmetovanja: {kmetija.tipKmetovanja.naziv}
+</p>

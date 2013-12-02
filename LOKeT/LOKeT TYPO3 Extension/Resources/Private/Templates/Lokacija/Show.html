@@ -1,0 +1,34 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+
+<f:flashMessages />
+
+<h2>Single View for Lokacija</h2>
+
+<div class="btn-group">
+<f:link.action class="btn btn-default" action="edit" arguments="{lokacija:lokacija}">Uredi</f:link.action>
+
+<f:link.action class="btn btn-default" action="delete" arguments="{lokacija:lokacija}">Zbriši</f:link.action>
+
+<f:link.action  class="btn btn-default" action="list">Nazaj</f:link.action>
+</div>
+
+<div style="margin-top:20px;"></div>
+
+<div class="well">
+<f:render partial="Lokacija/Properties" arguments="{lokacija:lokacija}" />
+</div>
+
+</f:section>

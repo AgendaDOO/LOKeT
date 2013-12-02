@@ -1,0 +1,33 @@
+
+<label for="naziv">
+	<f:translate key="tx_agloket_domain_model_kmetija.naziv" /> <span class="required">(required)</span>
+</label><br />
+	<f:form.textfield property="naziv" /><br />
+
+<label for="opis">
+	<f:translate key="tx_agloket_domain_model_kmetija.opis" />
+</label><br />
+	<f:form.textarea property="opis" cols="40" rows="15" /><br />
+
+<label for="velikostkmetije">
+    <f:translate key="tx_agloket_domain_model_kmetija.velikostkmetije" />
+</label><br />
+<f:form.select property="velikostkmetije" options="{velikostkmetijes}" optionLabelField="naziv"><select><option>dummy</option></select></f:form.select><br />
+
+
+<label for="tipkmetije">
+        <f:translate key="tx_agloket_domain_model_kmetija.tipkmetije" />
+</label><br />
+	<f:form.select property="tipkmetije" options="{tipkmetijes}" optionLabelField="naziv"><select><option>dummy</option></select></f:form.select><br />
+
+<label for="tippridelave">
+        <f:translate key="tx_agloket_domain_model_kmetija.tippridelave" />
+</label><br />
+	<f:form.select property="tippridelave" options="{tippridelaves}" optionLabelField="naziv"><select><option>dummy</option></select></f:form.select><br />
+
+<label for="tipkmetovanja">
+        <f:translate key="tx_agloket_domain_model_kmetija.tipkmetovanja" />
+</label><br />
+	<f:form.select property="tipkmetovanja" options="{tipkmetovanjas}" optionLabelField="naziv"><select><option>dummy</option></select></f:form.select><br />
+
+	

@@ -1,0 +1,55 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+  Resources:
+    Private:
+      Templates:
+        Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:debug>{pridelovalec}</f:debug>
+
+<f:section name="main">
+    <f:flashMessages />
+
+    <div style="margin-top:10px;"></div>
+
+    <h2>
+        Single View for Pridelovalec
+        <span class="label label-success">
+            <f:format.raw>{pridelovalec.username}</f:format.raw>
+        </span>
+    </h2>
+
+    <div class="well">
+        <f:render partial="Pridelovalec/Properties" arguments="{pridelovalec:pridelovalec}" />
+    </div>
+
+    <h2>
+        Single View for Kmetija
+        <span class="label label-danger">
+            <f:format.raw>{pridelovalec.kmetija.naziv}</f:format.raw>
+        </span>&nbsp;
+        of Pridelovalec
+        <span class="label label-success">
+            <f:format.raw>{pridelovalec.username}</f:format.raw>
+        </span>
+
+    </h2>
+
+    <div class="well">
+        <f:render partial="Kmetija/Properties" arguments="{kmetija:pridelovalec.kmetija}" />
+
+        <h2>Pridelki od kmetije</h2>
+        <f:for each="{pridelovalec.kmetija.pridelki}" as="pridelek">
+
+            <f:render partial="Produkt/Properties" arguments="{produkt:pridelek}" />
+            <hr/>
+        </f:for>
+    </div>
+
+</f:section>

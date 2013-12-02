@@ -1,0 +1,15 @@
+<Alloy>
+	<View>
+		<View class="dialogView" >
+			<Label id="lAddress" class="label" />
+			<TextField id="street" class="textfield-full" />
+
+			<Label id="lPost" class="label" />
+			<TextField id="post" class="textfield-full" />
+
+			<Label id="lCity" class="label"/>
+			<TextField id="city" class="textfield-full" />
+		</View>
+	</View>
+</Alloy>
+

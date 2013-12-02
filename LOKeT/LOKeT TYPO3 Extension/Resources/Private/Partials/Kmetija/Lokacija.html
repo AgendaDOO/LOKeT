@@ -1,0 +1,14 @@
+{namespace map=Agenda\AgLoket\ViewHelpers}
+
+<h4>Lokacija</h4>
+<hr/>
+<map:GoogleMaps lokacija="{kmetija.lokacija}" width="600" height="400" className="google-map" />
+<hr/>
+<address style="margin:20px">
+    <strong>{kmetija.naziv}</strong><br>
+    {kmetija.lokacija.naslov}<br>
+    {kmetija.lokacija.kraj}, {kmetija.lokacija.posta}<br/><br/>
+    <abbr title="Telefon">Tel:</abbr> {kmetija.tel}<br/>
+    <f:if condition="{kmetija.email} != ''"><abbr title="Email">Email:</abbr> <f:link.email email="{kmetija.email}" /><br/></f:if>
+    <f:if condition="{kmetija.url} != ''"><abbr title="Spletna stran">Spletna stran:</abbr> <f:link.external uri="{kmetija.url}" target="_blank">{kmetija.url}</f:link.external></f:if>
+</address>

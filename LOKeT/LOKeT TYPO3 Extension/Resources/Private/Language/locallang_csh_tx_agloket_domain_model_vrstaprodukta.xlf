@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-23T12:05:50Z" product-name="ag_loket">
+		<header/>
+		<body>
+
+			<trans-unit id="naziv.description">
+				<source>Vrsta produkta</source>
+			</trans-unit>
+			<trans-unit id="kategorijaprodukta.description">
+				<source>kategorijaprodukta</source>
+			</trans-unit>
+			<trans-unit id="sezona.description">
+				<source>sezona</source>
+			</trans-unit>
+            <trans-unit id="ikona.description">
+                <source>Ikona vrste produkta</source>
+            </trans-unit>
+            <trans-unit id="pic.description">
+                <source>Slika vrste produkta</source>
+            </trans-unit>
+		</body>
+	</file>
+</xliff>

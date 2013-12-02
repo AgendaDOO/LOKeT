@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-md-6">
+        <f:link.action  class="btn btn-default btn-sm" action="list">Nazaj</f:link.action><br />
+        <div class="well">
+            <table class="tx-ag-loket">
+                <tr>
+                    <td width="150px">
+                        <f:translate key="tx_agloket_domain_model_produkt.naziv" />
+                    </td>
+                    <td>
+                        {produkt.naziv}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <f:translate key="tx_agloket_domain_model_produkt.opis" />
+                    </td>
+                    <td>
+                        <f:format.html parseFuncTSPath='lib.parseFunc'>{produkt.opis}</f:format.html>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <f:image src="uploads/tx_agloket/{produkt.slike.slika}" alt='' width='400' />
+                        <br />{produkt.slike.naziv}
+                    </td>
+                </tr>
+                <tr>
+                    <td><f:translate key="tx_agloket_domain_model_kategorijaprodukta.naziv" /></td>
+                    <td>
+                        {produkt.vrstaProdukta.kategorijaProdukta.naziv}
+                    </td>
+                </tr>
+                <tr>
+                    <td><f:translate key="tx_agloket_domain_model_vrstaprodukta.naziv" /></td>
+                    <td>
+                        {produkt.vrstaProdukta.naziv}
+                    </td>
+                </tr>
+                <tr>
+                    <td><f:translate key="tx_agloket_domain_model_sezona.naziv" /></td>
+                    <td>
+                        <f:for each="{produkt.vrstaProdukta.sezona}" as="sezona">
+                            {sezona.naziv} <br />
+                        </f:for>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/../ag_femanager_hook" />
+    <content url="file://$MODULE_DIR$/../blog_example" />
+    <content url="file://$MODULE_DIR$/../femanager" />
+    <content url="file://$MODULE_DIR$/../femanager_changes" />
+    <content url="file://$MODULE_DIR$/../femanager_language" />
+    <content url="file://$MODULE_DIR$/../int_ypslideoutmenu" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../TYPO3_SRC/typo3_src-6.1.5" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../TYPO3_SRC/typo3_src-6.1.5" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
+

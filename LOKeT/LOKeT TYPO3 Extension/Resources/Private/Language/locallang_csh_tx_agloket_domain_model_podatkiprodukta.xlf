@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-07-23T13:19:28Z" product-name="ag_loket">
+		<header/>
+		<body>
+
+			<trans-unit id="kmetija.description">
+				<source>Kmetija</source>
+			</trans-unit>
+			<trans-unit id="slike.description">
+				<source>Slike</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

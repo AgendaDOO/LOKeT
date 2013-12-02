@@ -1,0 +1,9 @@
+<Alloy>
+	<Window layout="vertical">
+		<View height="50sp" layout="horizontal" backgroundColor="#BDECB6">
+			<Button id="preferences" width="50%" onClick="editPreferences" />
+			<Button id="mymarket" width="50%" onClick="editMarket" />
+		</View>
+		<WebView id="myFarm" />
+	</Window>
+</Alloy>

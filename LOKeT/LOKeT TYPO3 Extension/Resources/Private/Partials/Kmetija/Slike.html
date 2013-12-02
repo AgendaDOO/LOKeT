@@ -1,0 +1,39 @@
+<v:var.set name="slikeCount" value="{slike->f:count()}" />
+<f:if condition="{slikeCount} > 0">
+    <f:then>
+        <f:if condition="{slikeCount} == 1">
+            <f:then>
+                <f:for each="{slike}" as="slika">
+                    <f:image style="width:100%" src="uploads/tx_agloket/{slika.slika}" alt="{slika.naziv}" title="{slika.naziv}"  width="1140c" height="512c" />
+                </f:for>
+            </f:then>
+            <f:else>
+                {namespace v=Tx_Vhs_ViewHelpers}
+                <v:asset.script name="flexslider" debug="true" path="fileadmin/templates/bootstrap/jquery.flexslider.js" />
+                <v:asset.script name="flexsliderInit">
+                    $(window).load(function(){
+                        $('.flexslider').flexslider({
+                            animation: "slide",
+                            directionNav: false
+                        });
+                    });
+                </v:asset.script>
+                <div class="flexslider">
+                    <ul class="slides">
+                        <f:for each="{slike}" as="slika">
+                            <li><f:image src="uploads/tx_agloket/{slika.slika}" alt="{slika.naziv}" title="{slika.naziv}"  width="1024c" height="512c" /></li>
+                        </f:for>
+                    </ul>
+                </div>
+            </f:else>
+        </f:if>
+    </f:then>
+    <f:else>
+        <f:comment>
+            <v:format.placeholder.image  text="{nazivkmetije}" style="width:100%;" width="1024c" height="512c" backgroundColor="333333" textColor="FFFFFF"/>
+        </f:comment>
+        <f:image width="1140c" height="512c" style="width:100%;" src="uploads/tx_agloket/placeholder_1140.png" alt="" title=""  />
+    </f:else>
+</f:if>
+
+

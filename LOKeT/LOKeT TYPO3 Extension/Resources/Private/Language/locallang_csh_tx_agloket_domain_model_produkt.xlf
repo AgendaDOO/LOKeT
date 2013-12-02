@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-23T12:05:50Z" product-name="ag_loket">
+		<header/>
+		<body>
+
+			<trans-unit id="naziv.description">
+				<source>Naziv produkta</source>
+			</trans-unit>
+			<trans-unit id="opis.description">
+				<source>Opis produkta</source>
+			</trans-unit>
+			<trans-unit id="cena.description">
+				<source>Cena produkta</source>
+			</trans-unit>
+			<trans-unit id="na_zalogi.description">
+				<source>Ali je izdelek na zalogi</source>
+			</trans-unit>
+            <trans-unit id="kolicina.description">
+                <source>Količina po kateri se produkt prodaja</source>
+            </trans-unit>
+			<trans-unit id="enota.description">
+				<source>Enota po kateri se produkt prodaja</source>
+			</trans-unit>
+			<trans-unit id="letni_pridelek.description">
+				<source>Letni pridelekt</source>
+			</trans-unit>
+			<trans-unit id="slike.description">
+				<source>Slike produkta</source>
+			</trans-unit>
+            <trans-unit id="enotaprodukta.description">
+                <source>enotaprodukta</source>
+            </trans-unit>
+			<trans-unit id="vrstaprodukta.description">
+				<source>vrstaprodukta</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,27 @@
+<f:layout name="Default" />
+{namespace v=Tx_Vhs_ViewHelpers}
+<script type="text/javascript">
+    var link = '{f:uri.action(action:'list', controller:'Produkt', arguments:{longitude:longitude, latitude:latitude, sort:selectedOrder}, noCacheHash:1)}';
+    $(function() {
+        $('#categoryFilter').on('change', function() {
+            window.location = link+'&tx_agloket_loket%5Bcategory%5D='+this.value;
+        });
+    });
+
+    $(function() {
+        $('#sortBy').on('change', function() {
+            window.location = '{f:uri.action(action:'list', arguments:{category:selectedCat, longitude:longitude, latitude:latitude}, noCacheHash:1)}'+'&tx_agloket_loket%5Bsort%5D='+this.value;
+        });
+    });
+</script>
+
+<div class="filter" style="height: 15px">
+
+    <div id="category" style="float: left;">
+        <f:form.select id="categoryFilter" options="{kategorije}" value="{selectedCat}" prependOptionLabel="Izberite kategorijo izdelkov..." prependOptionValue="0" />
+    </div>
+
+    <div id="sort" style="float: right; height: 120%">
+        <f:form.select id="sortBy" options="{1: 'Ceni', 2: 'Oddaljenosti'}" value="{selectedOrder}" prependOptionLabel="Razvrsti po..." prependOptionValue="0" />
+    </div>
+</div>

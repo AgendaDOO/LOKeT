@@ -1,0 +1,62 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<v:asset.script name="accordion">
+    $(document).ready(function(){
+        $("#accordion").collapse();
+    });
+</v:asset.script>
+
+<h4>Pridelki</h4>
+<hr/>
+<div class="panel-group" id="accordion">
+    <f:for each="{pridelki}" as="pridelek" key="key" iteration="itemIteration">
+        <f:if condition="{pridelek.naZalogi} == 1">
+            <f:then>
+                <div class="panel panel-default">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_{key}">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                <f:image src="uploads/tx_agloket/{pridelek.vrstaProdukta.kategorijaProdukta.ikona}" width="32" height="32" alt="" title="" />
+                                {pridelek.naziv} <f:if condition="{pridelek.cena} != ''">- {pridelek.cena} € </f:if>
+                            </h3>
+                        </div>
+                    </a>
+                    <div id="collapse_{key}" class="panel-collapse collapse {f:if(condition:'{itemIteration.isFirst}',then: 'in')}">
+                        <div class="panel-body">
+                            <f:if condition="{pridelek.opis} != ''">
+                                <f:format.html parseFuncTSPath='lib.parseFunc'>{pridelek.opis}</f:format.html>
+                                <hr/>
+                            </f:if>
+
+                            <div class="col-sm-5">
+                                <div class="row">
+                                    <div class="thumbnail img_container">
+                                        <f:render partial="Produkt/MiniSlike" arguments="{slike:pridelek.slike, pic:pridelek.vrstaProdukta.kategorijaProdukta.pic}"/>
+                                        <f:if condition="{slika.naziv} != ''">
+                                            <div class="img_overlay">
+                                                <div class="img_desc">
+                                                    {slika.naziv}
+                                                </div>
+                                            </div>
+                                        </f:if>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <f:if condition="{pridelek.cena} != ''">Cena: {pridelek.cena} € <br></f:if>
+                                <f:if condition="{pridelek.kolicina} != '0'">Količina: {pridelek.kolicina} {pridelek.enotaProdukta.naziv}<br></f:if>
+                                <f:if condition="{pridelek.letniPridelek} != ''">Letni pridelek: {pridelek.letniPridelek}<br></f:if>
+                                Kategorija pridelka: {pridelek.vrstaProdukta.kategorijaProdukta.naziv}<br>
+                                Vrsta pridelka: {pridelek.vrstaProdukta.naziv}<br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </f:then>
+        </f:if>
+    </f:for>
+</div>
+
+
+
+

@@ -1,0 +1,143 @@
+'Window': {
+	navBarHidden: false,
+	backgroundColor: '#ffffff'
+}
+
+".preferencesView":{
+	layout:"vertical"
+}
+
+//Global Styles for default template
+
+"#iLogoImage":{
+	image:"/images/logos/logo.png",
+	top:20
+}
+"#iLogoImageSmall":{
+	image:"/images/logos/logo_small.png",
+	top:20
+}
+
+".tabWindow": {
+	layout:"vertical",
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	//backgroundColor:"#E9DFBC",
+	//barColor:"#6B5C3B"
+	backgroundGradient:{
+        type: 'linear',
+		startPoint: { x: '0%', y: '0%' },
+		endPoint: { x: '0%', y: '100%' },
+    	colors: [ '#CEDECC', '#B0CAAD']
+    }
+}
+
+"TextField": {
+	autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	borderWidth:1,
+	borderColor:"#CECECE",
+	backgroundColor:"#FCFCFC",
+	color:"#336699",
+	keyboardToolbarColor : '#CECECE',
+    keyboardToolbarHeight : "30sp",
+	top:10,
+	height:"45sp",
+	paddingLeft:"8sp",
+	paddingRight:"8sp",
+	width:"300sp",
+}
+
+".textfield-full" : {
+	width:Titanium.UI.FILL,
+	top:5,
+	bottom:5
+}
+
+"TextArea": {
+	autocapitalization: Ti.UI.TEXT_AUTOCAPITALIZATION_NONE,
+	borderWidth:1,
+	borderColor:"#CECECE",
+	backgroundColor:"#FCFCFC",
+	color:"#336699",
+	keyboardToolbarColor : '#CECECE',
+    keyboardToolbarHeight : "30sp",
+	top:10,
+	height:"150sp",
+	paddingLeft:"8sp",
+	paddingRight:"8sp",
+	width:"300sp",
+}
+
+"Label":{
+	left:20,
+	right:20,
+	//color:"#666666",
+	textAlign:Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font:{
+		fontFamily:"Helvetica Neue",
+		fontSize:14,
+		fontWeight:"bold",
+		fontStyle:"normal"
+	}
+}
+
+".label":{
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: '#5B5B5B',
+	height: '20sp',
+  	font: {
+  		fontSize:15
+  	},
+  	top:10,
+  	left:5
+}
+
+".dialogView":{
+	layout:"vertical",
+	top:10,
+	right:15,
+	bottom:15,
+	left:15
+}
+
+
+".borderView":{
+	height:"2sp",
+	backgroundColor:"#57B4E4"
+}
+
+/*"Button": {
+	height:40,
+	style:Titanium.UI.iPhone.SystemButtonStyle.PLAIN,
+	backgroundGradient:{
+        type:'linear',
+        colors:[{color:"#EAE9E9", position:0.0}, {color:"#DBDBDB", position:1.0}],
+        backFillStart: false
+    },
+	borderColor:"#BABABA",
+	color:"#2E2E2E",
+	selectedColor:"#000",
+	borderWidth:1,
+	borderRadius:5,
+	font:{
+		fontFamily:"Helvetica Neue",
+		fontSize:14,
+		fontWeight:"bold",
+		fontStyle:"normal"
+	}
+}*/
+/*
+"ActivityIndicator": {
+  message: Alloy.Globals.lang.mLoading,
+  color: '#666666',
+  font: {
+  	fontFamily:'Helvetica Neue',
+  	fontSize:12,
+  	fontWeight:'bold'
+  },
+
+  style:Ti.UI.iPhone.ActivityIndicatorStyle.DARK,
+  top:10,
+  height:Ti.UI.SIZE,
+  width:Ti.UI.SIZE
+}*/

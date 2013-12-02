@@ -1,0 +1,16 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+<f:if condition="{slike->f:count()} > 0">
+    <f:then>
+        <v:var.set name="slikeArray" value="{slike->v:call(method:'toArray')}" />
+        <f:image width="565c" height="424c" style="width:100%;" src="uploads/tx_agloket/{slikeArray.0.slika}" alt="" title=""  />
+    </f:then>
+    <f:else>
+        <f:comment>
+            <v:format.placeholder.image  text="Kmetija nima slike" style="width:100%;" width="565c" height="424c" backgroundColor="333333" textColor="FFFFFF"/>
+        </f:comment>
+        <f:image width="565c" height="424c" style="width:100%;" src="uploads/tx_agloket/placeholder_565.png" alt="" title=""  />
+    </f:else>
+</f:if>
+
+
+

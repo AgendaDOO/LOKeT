@@ -1,0 +1,74 @@
+<f:layout name="Default" />
+
+This Template is responsible for displaying a single view for a domain object
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+Show.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+
+
+<f:section name="main">
+    <script>
+        function goBack()
+        {
+            window.history.back()
+        }
+    </script>
+
+
+    <div class="flex-slider-container">
+        <input type="button" class="btn btn-default btn-block" value="Nazaj" onclick="goBack()">
+
+        <f:render partial="Produkt/Slike" arguments="{slike : produkt.slike, pic : produkt.vrstaProdukta.kategorijaProdukta.pic}"/>
+        <div class="naziv-kmetije-header">
+            <h2>{produkt.naziv}</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="farm-well">
+                    <f:if condition="{produkt.opis} != ''">
+                    <h4>Opis pridelka</h4>
+                    <hr/>
+                    <div class="more">
+                        <f:format.html parseFuncTSPath='lib.parseFunc'>{produkt.opis}</f:format.html>
+                    </div>
+                    <hr/>
+                    </f:if>
+                    <f:if condition="{produkt.cena} != ''"><p>Cena: {produkt.cena} € </p></f:if>
+                    <f:if condition="{produkt.kolicina} != '0'"><p>Količina: {produkt.kolicina} {produkt.enotaProdukta.naziv}</p></f:if>
+                    <f:if condition="{produkt.letniPridelek} != ''"><p>Letni pridelek: {produkt.letniPridelek}</p></f:if>
+
+                    <p>
+                        Kategorija pridelka: {produkt.vrstaProdukta.kategorijaProdukta.naziv} <br>
+                        Vrsta pridelka: {produkt.vrstaProdukta.naziv} <br>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="farm-well">
+                    <h4>Podatki o kmetiji</h4>
+                    <hr/>
+                    <p>
+                        Naziv kmetije: {produkt.kmetija.naziv}<br/>
+                        Opis kmetije: <br>
+                    </p>
+                    <div class="more">
+                        <f:format.html parseFuncTSPath='lib.parseFunc'>{produkt.kmetija.opis}</f:format.html>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</f:section>

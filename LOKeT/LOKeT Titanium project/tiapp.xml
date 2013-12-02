@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <id>si.agenda.loket</id>
+    <name>LOKeT</name>
+    <version>1.0.7</version>
+    <publisher>Agenda</publisher>
+    <url>http://www.agenda.si</url>
+    <description>Lokalna e tržnica</description>
+    <copyright>2013 by Agenda</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>0fc73337-939c-462f-8179-72d48ad0e10c</guid>
+    <ios>
+        <plist>
+            <dict>
+                <key>UIAppFonts</key>
+                <array>
+                    <string>/fonts/fontawesome-webfont.ttf</string>
+                </array>
+            </dict>
+        </plist>
+    </ios>
+    <property name="ti.android.fastdev" type="bool">false</property>
+    <property name="ti.ui.defaultunit" type="string">dp</property>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <tool-api-level>15</tool-api-level>
+        <manifest android:versionCode="8" android:versionName="1.0.7" xmlns:android="http://schemas.android.com/apk/res/android">
+            <uses-sdk android:maxSdkVersion="17"
+                android:minSdkVersion="15" android:targetSdkVersion="15"/>
+            <!-- Google maps API KEY and Theme definition -->
+            <application android:theme="@style/Theme.Loket">
+                <meta-data
+                    android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCayF3LEP69qArm9_rqEdBm78lmUFcOwZA"/>
+            </application>
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <!-- Allows the API to download data from Google Map servers -->
+            <uses-permission android:name="android.permission.INTERNET"/>
+            <!-- Allows the API to cache data -->
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+            <!-- Use GPS for device location -->
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+            <!-- Use Wi-Fi or mobile connection for device location -->
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+            <!-- Allows the API to access Google web-based services -->
+            <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+            <!-- Specify OpenGL ES 2.0 as a requirement -->
+            <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+            <!-- Replace <com.domain.appid> with your application ID -->
+            <uses-permission android:name="si.agenda.loket.permission.MAPS_RECEIVE"/>
+            <permission
+                android:name="si.agenda.loket.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+        </manifest>
+    </android>
+    <modules>
+        <module platform="android">ti.map</module>
+    </modules>
+    <deployment-targets>
+        <!-- ANDROID ONLY! -->
+        <target device="android">true</target>
+        <target device="ipad">false</target>
+        <target device="blackberry">false</target>
+        <target device="iphone">false</target>
+        <target device="mobileweb">false</target>
+        <target device="tizen">false</target>
+    </deployment-targets>
+    <sdk-version>3.1.3.GA</sdk-version>
+    <plugins>
+        <plugin version="1.2">ti.alloy</plugin>
+    </plugins>
+    <!--  <property name="ti.deploytype">test</property> -->
+</ti:app>

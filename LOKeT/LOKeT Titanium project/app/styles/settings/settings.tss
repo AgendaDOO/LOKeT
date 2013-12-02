@@ -1,0 +1,90 @@
+"#settings":{
+	title:Alloy.Globals.lang.settings.title
+}
+
+"#lLocation":{
+	text:Alloy.Globals.lang.settings.location
+}
+
+"#lOpeningHours":{
+	text:Alloy.Globals.lang.settings.openingHours
+}
+
+"#lBasics":{
+	text:Alloy.Globals.lang.settings.basics
+}
+
+"#lImage":{
+	text:Alloy.Globals.lang.settings.image
+}
+
+"#lType":{
+	text:Alloy.Globals.lang.settings.type
+}
+
+"#lTypeK":{
+	text:Alloy.Globals.lang.settings.typeK
+}
+
+"#lTypeP":{
+	text:Alloy.Globals.lang.settings.typeP
+}
+
+"#lSize":{
+	text:Alloy.Globals.lang.settings.size
+}
+
+".tableView":{
+	height:"100%",
+	layout:"vertical"
+}
+
+".headerLabel":{
+	top:5,
+	left:5,
+	right:5,
+	font:{
+		fontWeight:"bold",
+		fontSize:"20sp"
+	}
+}
+
+"TableViewRow" : {
+	backgroundColor:"#fafafa",
+	selectedBackgroundColor:"#79F27B",
+	height:"60sp",
+	font: {
+        fontSize: '20sp',
+        fontWeight:"bold",
+        color:"#2b2b2b"
+   },
+   rightImage:Ti.Android.R.drawable.ic_menu_more,
+   right:5
+
+}
+
+"#index" : {
+	//modal:true
+	exitOnClose:false
+}
+
+".container": {
+	backgroundColor:"white"
+},
+
+".tableRow" : {
+	backgroundColor:"#fafafa",
+	selectedBackgroundColor:"#79F27B",
+	height:"60sp",
+	font: {
+        fontSize: '20sp',
+        fontWeight:"bold",
+        color:"#2b2b2b"
+    }
+}
+
+"Label": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#000"
+}

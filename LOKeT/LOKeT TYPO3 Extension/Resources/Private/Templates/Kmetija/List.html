@@ -1,0 +1,31 @@
+<f:layout name="Default" />
+
+List view za kmetije
+
+<f:flashMessages />
+
+<f:section name="main">
+
+    <div class="container" style="padding:10px 15px;">
+        <div class="row">
+            <f:for each="{kmetije}" as="kmetija">
+                <div class="col-sm-6 farm-list" onclick="window.open('{f:uri.action(action:'show',arguments:'{kmetija:kmetija}')}','_self');">
+                    <div class="thumbnail img_container">
+                        <f:render partial="Kmetija/ListSlika" arguments="{slike : kmetija.slike}"/>
+                        <div class="img_overlay">
+                            <div class="img_desc">
+                                <f:link.action action="show" arguments="{kmetija : kmetija}"><b>{kmetija.naziv}</b></f:link.action>
+                                <f:if condition="{kmetija.lokacija}">
+                                    <f:then>
+                                        <br />
+                                        {kmetija.lokacija.naslov}, {kmetija.lokacija.kraj}
+                                    </f:then>
+                                </f:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </f:for>
+        </div>
+    </div>
+</f:section>

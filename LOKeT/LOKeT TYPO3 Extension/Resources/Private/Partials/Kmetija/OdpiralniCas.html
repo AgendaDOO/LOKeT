@@ -1,0 +1,21 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+
+<v:if.condition>
+    <v:if.condition.extend>
+        ({odpiralnicas.friday_from} != NULL) OR ({odpiralnicas.friday_to} != NULL) OR ({odpiralnicas.saturday_from} != NULL) OR ({odpiralnicas.saturday_to} != NULL) OR ({odpiralnicas.sunday_from} != NULL) OR ({odpiralnicas.sunday_to} != NULL)
+    </v:if.condition.extend>
+
+    <f:then>
+    <address style="margin:20px">
+        <b>Odpiralni čas</b><br>
+        <f:if condition="{odpiralnicas.friday_from} != ''">Petek: <f:format.date date="{odpiralnicas.friday_from}" format="H:i"/> -
+            <f:format.date date="{odpiralnicas.friday_to}" format="H:i"/><br></f:if>
+
+        <f:if condition="{odpiralnicas.saturday_from} != ''">Sobota: <f:format.date date="{odpiralnicas.saturday_from}" format="H:i"/> -
+            <f:format.date date="{odpiralnicas.saturday_to}" format="H:i"/><br></f:if>
+
+        <f:if condition="{odpiralnicas.sunday_from} != ''">Nedelja: <f:format.date date="{odpiralnicas.sunday_from}" format="H:i"/> -
+            <f:format.date date="{odpiralnicas.sunday_to}" format="H:i"/></f:if>
+    </address>
+    </f:then>
+</v:if.condition>

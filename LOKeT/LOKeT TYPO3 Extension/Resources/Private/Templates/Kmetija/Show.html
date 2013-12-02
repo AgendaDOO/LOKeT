@@ -1,0 +1,58 @@
+<f:layout name="Default" />
+
+To je single view kateri vsebuje gumb nazaj.
+
+
+
+<f:section name="main">
+    <script>
+        function goBack()
+        {
+            window.history.back()
+        }
+    </script>
+
+    <div class="flex-slider-container">
+        <input type="button" class="btn btn-default btn-block" value="Nazaj" onclick="goBack()">
+        <f:render partial="Kmetija/Slike" arguments="{slike : kmetija.slike, nazivkmetije:kmetija.naziv}"/>
+        <div class="contact-container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="tel:{kmetija.tel}" class="btn btn-success btn-lg btn-block">Pokliči</a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="mailto:{kmetija.email}" class="btn btn-info btn-lg btn-block">Pošlji email</a>
+                </div>
+            </div>
+        </div>
+        <div class="naziv-kmetije-header">
+            <h2>{kmetija.naziv}</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <f:if condition="{kmetija.lokacija}">
+                <f:then>
+                    <div class="col-lg-6">
+                        <div class="farm-well">
+                            <f:render partial="Kmetija/Lokacija" arguments="{kmetija : kmetija}"/>
+                            <f:render partial="Kmetija/OdpiralniCas" arguments="{odpiralnicas:kmetija.odpiralniCas}"/>
+                        </div>
+                    </div>
+                </f:then>
+            </f:if>
+            <div class="col-lg-6">
+                <div class="farm-well">
+                    <f:render partial="Kmetija/Properties" arguments="{kmetija : kmetija}"/>
+                </div>
+                <f:if condition="{kmetija.pridelki}">
+                    <f:then>
+                        <div class="farm-well">
+                            <f:render partial="Kmetija/Pridelki" arguments="{pridelki : kmetija.pridelki}"/>
+                        </div>
+                    </f:then>
+                </f:if>
+            </div>
+        </div>
+    </div>
+</f:section>

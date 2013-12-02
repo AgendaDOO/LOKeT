@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-02-12T23:55:39Z" product-name="ag_loket">
+		<header/>
+		<body>
+
+			<!-- Tab naming -->
+			<trans-unit id="tx_agloket_domain_model_kmetija.tabs.lokacija">
+				<source>Lokacija</source>
+			</trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_kmetija.tabs.slikekmetije">
+				<source>Slike kmetije</source>
+			</trans-unit>
+				
+			<trans-unit id="tx_agloket_domain_model_produkt.tabs.slike">
+				<source>Slike</source>
+			</trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_kmetija.tabs.pridelki">
+				<source>Pridelki</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

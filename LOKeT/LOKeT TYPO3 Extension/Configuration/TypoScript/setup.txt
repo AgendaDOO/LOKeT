@@ -1,0 +1,48 @@
+plugin.tx_agloket {
+	view {
+		templateRootPath = {$plugin.tx_agloket.view.templateRootPath}
+		partialRootPath = {$plugin.tx_agloket.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_agloket.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_agloket.persistence.storagePid}
+
+		classes {
+            Agenda\AgLoket\Domain\Model\Kmetija.newRecordStoragePid = {$plugin.tx_agloket.persistence.kmetija_storagePid}
+            Agenda\AgLoket\Domain\Model\Produkt.newRecordStoragePid = {$plugin.tx_agloket.persistence.produkt_storagePid}
+            Agenda\AgLoket\Domain\Model\Lokacija.newRecordStoragePid = {$plugin.tx_agloket.persistence.lokacija_storagePid}
+            Agenda\AgLoket\Domain\Model\Slike.newRecordStoragePid = {$plugin.tx_agloket.persistence.slike_storagePid}
+            Agenda\AgLoket\Domain\Model\Pridelovalec.newRecordStoragePid = {$plugin.tx_agloket.persistence.pridelovalec_storagePid}
+            Agenda\AgLoket\Domain\Model\TipKmetije.newRecordStoragePid = {$plugin.tx_agloket.persistence.tipKmetije_storagePid}
+        }
+	}
+	features {
+		# uncomment the following line to enable the new Property Mapper.
+		rewrittenPropertyMapper = 1
+	}
+}
+
+plugin.tx_agloket._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-ag-loket table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-ag-loket table th {
+		font-weight:bold;
+	}
+
+	.tx-ag-loket table td {
+		vertical-align:top;
+	}
+)

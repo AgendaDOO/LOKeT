@@ -1,0 +1,50 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+If you modify this template, do not forget to change the overwrite settings
+in /Configuration/ExtensionBuilder/settings.yaml:
+Resources:
+Private:
+Templates:
+List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the extension builder
+
+<f:section name="main">
+    <div class="container">
+
+        <f:render partial="Produkt/Filter" arguments="{kategorije : kategorije, selectedCat:selectedCat, selectedOrder:selectedOrder,
+                                                       longitude:longitude, latitude:latitude}"/>
+
+        <div class="row">
+            <div class="thumbnails">
+                <f:for each="{produkts}" as="produkt">
+                    <f:if condition="{produkt.naZalogi} == 1">
+                        <div class="col-sm-6 farm-list">
+                            <div class="thumbnail clearfix">
+
+                                    <div class="col-sm-12">
+                                        <h3><f:link.action action="show" arguments="{produkt : produkt}">{produkt.naziv}</f:link.action></h3>
+                                        <hr/>
+                                    </div>
+
+                                <div class="col-sm-6">
+                                    <f:link.action action="show" arguments="{produkt : produkt}"><f:render partial="Produkt/ListSlika" arguments="{slike : produkt.slike, defaultSlika:produkt.vrstaProdukta.kategorijaProdukta.pic}"/></f:link.action>
+                                </div>
+                                <div class="col-sm-6">
+                                        <f:if condition="{produkt.cena} != ''"><h3 class="text-danger"><cite title="Source Title">{produkt.cena} €</h3></f:if>
+                                        <f:if condition="{produkt.kolicina} != '0'">Količina: {produkt.kolicina} {produkt.enotaProdukta.naziv}</f:if>
+                                        <h4><f:link.action action="show" controller="Kmetija" arguments="{kmetija : produkt.kmetija}">{produkt.kmetija.naziv}</f:link.action></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </f:if>
+                </f:for>
+            </div>
+        </div>
+    </div>
+
+</f:section>
+
+

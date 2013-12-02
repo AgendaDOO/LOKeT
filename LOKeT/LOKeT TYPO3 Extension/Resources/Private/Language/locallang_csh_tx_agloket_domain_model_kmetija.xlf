@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-23T12:05:49Z" product-name="ag_loket">
+		<header/>
+		<body>
+
+			<trans-unit id="naziv.description">
+				<source>Naziv kmetije</source>
+			</trans-unit>
+			<trans-unit id="opis.description">
+				<source>Opis kmetije</source>
+			</trans-unit>
+            <trans-unit id="tel.description">
+                <source>Telefonska številka kmetije</source>
+            </trans-unit>
+            <trans-unit id="email.description">
+                <source>Email kmetije</source>
+            </trans-unit>
+            <trans-unit id="url.description">
+                <source>Spletna stran kmetije</source>
+            </trans-unit>
+			<trans-unit id="odpiralni_cas.description">
+				<source>Odpiralni čas</source>
+			</trans-unit>
+			<trans-unit id="velikost.description">
+				<source>Velikost kmetije</source>
+			</trans-unit>
+			<trans-unit id="lokacija.description">
+				<source>lokacija</source>
+			</trans-unit>
+			<trans-unit id="tipkmetije.description">
+				<source>tipkmetije</source>
+			</trans-unit>
+			<trans-unit id="tippridelave.description">
+				<source>tippridelave</source>
+			</trans-unit>
+			<trans-unit id="tipkmetovanja.description">
+				<source>tipkmetovanja</source>
+			</trans-unit>
+			<trans-unit id="slike.description">
+				<source>slike</source>
+			</trans-unit>
+			<trans-unit id="pridelki.description">
+				<source>pridelki</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

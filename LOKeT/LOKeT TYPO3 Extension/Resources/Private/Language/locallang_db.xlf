@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-23T12:05:49Z" product-name="ag_loket">
+		<header/>
+		<body>
+
+			<trans-unit id="tx_agloket_domain_model_kmetija">
+				<source>Kmetija</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.opis">
+				<source>Opis</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.odpiralni_cas">
+				<source>Odpiralni Cas</source>
+			</trans-unit>
+            <trans-unit id="tx_agloket_domain_model_kmetija.tel">
+                <source>Telefonska številka</source>
+            </trans-unit>
+            <trans-unit id="tx_agloket_domain_model_kmetija.email">
+                <source>Email</source>
+            </trans-unit>
+            <trans-unit id="tx_agloket_domain_model_kmetija.url">
+                <source>Spletna stran kmetije</source>
+            </trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.velikost">
+				<source>Velikost</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.lokacija">
+				<source>Lokacija</source>
+			</trans-unit>
+            <trans-unit id="tx_agloket_domain_model_kmetija.velikostkmetije">
+                <source>Velikostkmetije</source>
+            </trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.tipkmetije">
+				<source>Tipkmetije</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.tippridelave">
+				<source>Tippridelave</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.tipkmetovanja">
+				<source>Tipkmetovanja</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.slike">
+				<source>Slike</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kmetija.pridelki">
+				<source>Pridelki</source>
+			</trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_lokacija">
+				<source>Lokacija</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_lokacija.naslov">
+				<source>Naslov</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_lokacija.posta">
+				<source>Posta</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_lokacija.kraj">
+				<source>Kraj</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_lokacija.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_lokacija.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+
+            <trans-unit id="tx_agloket_domain_model_velikostkmetije">
+                <source>Velikost Kmetije</source>
+            </trans-unit>
+            <trans-unit id="tx_agloket_domain_model_velikostkmetije.naziv">
+                <source>Naziv</source>
+            </trans-unit>
+
+            <trans-unit id="tx_agloket_domain_model_tipkmetije">
+				<source>Tip Kmetije</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_tipkmetije.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_tippridelave">
+				<source>Tip Pridelave</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_tippridelave.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_tipkmetovanja">
+				<source>Tip Kmetovanja</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_tipkmetovanja.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_slike">
+				<source>Slike</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_slike.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_slike.slika">
+				<source>Slika</source>
+			</trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_pridelovalec">
+				<source>Pridelovalec</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_pridelovalec.kmetija">
+				<source>Kmetija</source>
+			</trans-unit>
+			
+			<trans-unit id="fe_users.tx_extbase_type.Tx_AgLoket_Pridelovalec">
+				<source>Loket Pridelovalec</source>
+			</trans-unit>
+			
+			<trans-unit id="tx_agloket_domain_model_produkt">
+				<source>Produkt</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.opis">
+				<source>Opis</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.cena">
+				<source>Cena</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.na_zalogi">
+				<source>Na Zalogi</source>
+			</trans-unit>
+            <trans-unit id="tx_agloket_domain_model_produkt.kolicina">
+                <source>Količina</source>
+            </trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.enotaprodukta">
+				<source>Enota produkta</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.letni_pridelek">
+				<source>Letni Pridelek</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.slike">
+				<source>Slike</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_produkt.vrstaprodukta">
+				<source>Vrstaprodukta</source>
+			</trans-unit>
+
+            <trans-unit id="tx_agloket_domain_model_enotaprodukta">
+                <source>Enota Produkta</source>
+            </trans-unit>
+            <trans-unit id="tx_agloket_domain_model_enotaprodukta.naziv">
+                <source>Naziv</source>
+            </trans-unit>
+            <trans-unit id="tx_agloket_domain_model_vrstaprodukta">
+				<source>Vrsta Produkta</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_vrstaprodukta.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_vrstaprodukta.kategorijaprodukta">
+				<source>Kategorijaprodukta</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_vrstaprodukta.sezona">
+				<source>Sezona</source>
+			</trans-unit>
+            <trans-unit id="tx_agloket_domain_model_vrstaprodukta.ikona">
+                <source>Ikona vrste produkta</source>
+            </trans-unit>
+            <trans-unit id="tx_agloket_domain_model_vrstaprodukta.pic">
+                <source>Slika vrste produkta</source>
+            </trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_kategorijaprodukta">
+				<source>Kategorija Produkta</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_kategorijaprodukta.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+            <trans-unit id="tx_agloket_domain_model_kategorijaprodukta.ikona">
+                <source>Ikona kategorije produkta</source>
+            </trans-unit>
+            <trans-unit id="tx_agloket_domain_model_kategorijaprodukta.pic">
+                <source>Slika kategorije produkta</source>
+            </trans-unit>
+
+			<trans-unit id="tx_agloket_domain_model_sezona">
+				<source>Sezona</source>
+			</trans-unit>
+			<trans-unit id="tx_agloket_domain_model_sezona.naziv">
+				<source>Naziv</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

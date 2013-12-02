@@ -1,0 +1,32 @@
+plugin.tx_agloket {
+	view {
+		# cat=plugin.tx_agloket/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:ag_loket/Resources/Private/Templates/
+		# cat=plugin.tx_agloket/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:ag_loket/Resources/Private/Partials/
+		# cat=plugin.tx_agloket/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:ag_loket/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_agloket//a; type=string; label=Default storage PID
+		storagePid = 2,24,25,26,27,28,15
+
+		# cat=plugin.tx_agloket//a; type=string; label=Kmetije Default storage PID
+		kmetija_storagePid = 2
+
+		# cat=plugin.tx_agloket//a; type=string; label=Pridelki Default storage PID
+		produkt_storagePid = 26
+
+		# cat=plugin.tx_agloket//a; type=string; label=Lokacije Default storage PID
+        lokacija_storagePid = 25
+
+		# cat=plugin.tx_agloket//a; type=string; label=Slike Default storage PID
+		slike_storagePid = 28
+
+		# cat=plugin.tx_agloket//a; type=string; label=Pridelovalec Default storage PID
+		pridelovalec_storagePid = 15
+
+		# cat=plugin.tx_agloket//a; type=string; label=TipKmetije Default storage PID
+		tipKmetije_storagePid = 24
+	}
+}

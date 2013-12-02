@@ -1,0 +1,11 @@
+{namespace v=Tx_Vhs_ViewHelpers}
+
+<f:if condition="{slike->f:count()} > 0">
+    <f:then>
+        <v:var.set name="slikeArray" value="{slike->v:call(method:'toArray')}" />
+        <f:image width="300c" height="250c" style="max-width:100%; height:auto;" src="uploads/tx_agloket/{slikeArray.0.slika}" alt="" title=""  />
+    </f:then>
+    <f:else>
+        <f:image style="max-width:100%; height:auto;" src="uploads/tx_agloket/{defaultSlika}" width="300c" height="250c" alt="" title="" />
+    </f:else>
+</f:if>

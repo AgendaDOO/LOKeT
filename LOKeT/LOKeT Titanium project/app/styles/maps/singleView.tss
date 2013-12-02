@@ -1,0 +1,7 @@
+"#openMaps":{
+	title:Alloy.Globals.lang.map.open
+}
+
+"#kmetija":{
+	enableZoomControls:false
+}

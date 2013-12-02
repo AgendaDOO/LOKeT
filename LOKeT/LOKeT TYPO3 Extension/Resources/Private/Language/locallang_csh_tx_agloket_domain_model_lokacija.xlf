@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-08-23T12:05:49Z" product-name="ag_loket">
+		<header/>
+		<body>
+
+			<trans-unit id="naslov.description">
+				<source>Naslov</source>
+			</trans-unit>
+			<trans-unit id="posta.description">
+				<source>Pošta</source>
+			</trans-unit>
+			<trans-unit id="kraj.description">
+				<source>Kraj</source>
+			</trans-unit>
+			<trans-unit id="latitude.description">
+				<source>latitude</source>
+			</trans-unit>
+			<trans-unit id="longitude.description">
+				<source>longitude</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
