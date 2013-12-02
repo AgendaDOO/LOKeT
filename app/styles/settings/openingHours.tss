@@ -1,0 +1,95 @@
+"ScrollableView":{
+	height:"270sp"
+}
+
+".timepicker":{
+	format24:true,
+	type:Ti.UI.PICKER_TYPE_TIME
+}
+
+".hView":{
+	top:0,
+	height:"180sp",
+	layout:"horizontal"
+}
+
+".vView":{
+	layout:"vertical"
+}
+
+".headerButton":{
+	width:"33%"
+}
+
+"#bFriday":{
+	title:Alloy.Globals.lang.settings.friday
+}
+
+"#bSaturday":{
+	title:Alloy.Globals.lang.settings.saturday
+}
+
+"#bSunday":{
+	title:Alloy.Globals.lang.settings.sunday
+}
+
+
+"#friday_from":{
+	text:Alloy.Globals.lang.settings.friday_from
+}
+
+"#friday_to":{
+	text:Alloy.Globals.lang.settings.friday_to
+}
+
+"#saturday_from":{
+	text:Alloy.Globals.lang.settings.saturday_from
+}
+
+"#saturday_to":{
+	text:Alloy.Globals.lang.settings.saturday_to
+}
+
+"#sunday_from":{
+	text:Alloy.Globals.lang.settings.sunday_from
+}
+
+"#sunday_to":{
+	text:Alloy.Globals.lang.settings.sunday_to
+}
+
+".left":{
+	layout:"vertical",
+	width:"50%"
+}
+
+".right":{
+	layout:"vertical",
+	width:"50%"
+}
+
+".checkbox":{
+	style: Ti.UI.Android.SWITCH_STYLE_CHECKBOX,
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	top:0,
+	title:Alloy.Globals.lang.settings.open,
+	value:false
+}
+
+"#fridayView":{
+	backgroundColor:"#BDECB6"
+}
+
+"#saturdayView":{
+	backgroundColor:"#D8ECB6"
+}
+
+"#sundayView":{
+	backgroundColor:"#ECE5B6"
+}
+
+".open":{
+	top:20,
+	height:"30sp"
+}

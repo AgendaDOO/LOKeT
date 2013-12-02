@@ -1,0 +1,30 @@
+"#bBack":{
+	enabled:false,
+	title:Alloy.Globals.lang.buttons.back
+}
+
+"#bCancel":{
+	title:Alloy.Globals.lang.buttons.cancel
+}
+
+"#bSave":{
+	enabled:false,
+	title:Alloy.Globals.lang.buttons.save
+}
+
+".headerButton":{
+	width:"33%"
+}
+
+
+"ScrollableView":{
+	height:"310sp"
+}
+
+"View":{
+	layout:"vertical"
+}
+
+"Button":{
+	width:"200sp"
+}

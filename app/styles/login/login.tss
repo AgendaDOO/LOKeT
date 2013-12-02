@@ -1,0 +1,41 @@
+"#tUsername":{
+	hintText:Alloy.Globals.lang.tUsername,
+	top:20,
+	keyboardType:Ti.UI.KEYBOARD_EMAIL,
+	returnKeyType:Titanium.UI.RETURNKEY_NEXT
+}
+
+"#tPassword":{
+	hintText:Alloy.Globals.lang.tPassword,
+	top:20,
+	bottom:30,
+	passwordMask:true,
+	returnKeyType:Titanium.UI.RETURNKEY_GO
+}
+
+"#lForgot":{
+	text:Alloy.Globals.lang.lForgot,
+	top:10,
+	bottom:20
+}
+
+"#lPassword":{
+	text:Alloy.Globals.lang.lPassword,
+	top:20
+}
+
+".modalContainer": {
+	layout:"vertical",
+	height:Titanium.UI.FILL,
+	width:Titanium.UI.FILL,
+	backgroundColor:"#FFFFFF",
+	//backgroundColor:"#E9DFBC",
+	//barColor:"#6B5C3B"
+	//backgroundGradient:{
+    //    type: 'linear',
+	//	startPoint: { x: '0%', y: '0%' },
+	//	endPoint: { x: '0%', y: '100%' },
+    //	colors: [ '#ECFFF3', '#D7F1C1']
+    //}
+}
+
